@@ -37,6 +37,13 @@ thankyou_page_description: "Your message has been successfully sent. I'll get ba
 # linkedin: "https://www.linkedin.com/in/nuclearkatie"
 # producthunt: "https://producthunt.com/@yourprofile"
 
+#hero section 
+hero_background_image: "/path/to/your/background-image.jpg"
+hero_avatar: "/path/to/your/avatar.jpg"
+hero_avatar_alt_text: "Your Avatar Alt Text"
+hero_title: "Welcome to My Site"
+hero_text: "This is a brief introduction or tagline for your site."
+
 # Navigation
 navigation:
   - text: About
