@@ -1,38 +1,38 @@
 <!DOCTYPE html>
-<html lang="{{@site.locale}}">
+<html lang="{{ site.locale }}">
     <head>
-        {{!-- Document Settings --}}
+        <!-- Document Settings -->
         <meta charset="utf-8">
-        {{!-- Page Meta --}}
-        <title>{{meta_title}}</title>
+        <!-- Page Meta -->
+        <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {{!-- Styles --}}
-        {{> custom-fonts}}
-        <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
-        {{!-- Outputs SEO meta+structured data and other important settings --}}
-        {{ghost_head}}
+        <!-- Styles -->
+        {% include custom-fonts.html %}
+        <link rel="stylesheet" type="text/css" href="{{ '/assets/css/style.css' | relative_url }}" />
+        <!-- Outputs SEO meta+structured data and other important settings -->
+        {% seo %}
     </head>
-    <body class="{{body_class}}{{#if @custom.enable_content_animation}} animate-fadeInDown{{/if}}">
+    <body class="{{ page.classes }}{% if site.enable_content_animation %} animate-fadeInDown{% endif %}">
 
         <div id="page" class="site">
-            {{!-- Inserts the main content --}}
-            {{{body}}}
-            {{!-- Includes the theme footer - partials/footer.hbs --}}
-            {{> footer}}
+            <!-- Inserts the main content -->
+            {{ content }}
+            <!-- Includes the theme footer - partials/footer.hbs -->
+            {% include footer.html %}
         </div>
         <div class="site-overlay"></div>
 
-        {{!--Includes the theme sidebar - partials/sidebar.hbs --}}
-        {{> sidebar}}
+        <!-- Includes the theme sidebar - partials/sidebar.hbs -->
+        {% include sidebar.html %}
 
-        {{!-- Scripts --}}
-        <script src="{{asset "js/index.js"}}"></script>
-        {{#is "post, page"}}
-        <script src="{{asset "js/post.js"}}"></script>
-        {{/is}}
+        <!-- Scripts -->
+        <script src="{{ '/assets/js/index.js' | relative_url }}"></script>
+        {% if page.layout == "post" or page.layout == "page" %}
+        <script src="{{ '/assets/js/post.js' | relative_url }}"></script>
+        {% endif %}
 
-        {{!-- Outputs important scripts and data --}}
-        {{ghost_foot}}
+        <!-- Outputs important scripts and data -->
+        {{ site.ghost_foot }}
 
     </body>
 </html>
