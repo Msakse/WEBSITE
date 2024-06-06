@@ -1,0 +1,32 @@
+<!-- The hero section -->
+<div class="hero">
+
+    <!-- Adds publication cover image in the background -->
+    {% if site.hero_background_image %}
+        <div class="hero-bg" style="background-image: url({{ site.hero_background_image }})"></div>
+    {% endif %}
+
+    <!-- Includes the theme header -->
+    {% include header.html %}
+
+    <section class="hero-container outer">
+        <div class="hero-content inner">
+            {% if site.hero_avatar %}
+                <div class="hero-avatar">
+                    <img src="{{ site.hero_avatar }}" alt="{{ site.hero_avatar_alt_text | default: site.title }}" class="avatar" />
+                </div>
+            {% endif %}
+            {% if site.hero_title %}
+                <h2 class="hero-title h1">{{ site.hero_title }}</h2>
+            {% endif %}
+            {% if site.hero_text %}
+                <p class="hero-text">{{ site.hero_text }}</p>
+            {% endif %}
+            <!-- Includes the social links list -->
+            <div class="hero-social">
+                {% include social-links.html %}
+            </div>
+        </div>
+    </section>
+
+</div>
