@@ -44,6 +44,10 @@ hero_avatar_alt_text: "Your Avatar Alt Text"
 hero_title: "Welcome to My Site"
 hero_text: "This is a brief introduction or tagline for your site."
 
+#about section
+about_title: "About Me"
+about_text: "This is a brief description about me and my blog. I am passionate about evidence-based medical innovation and biosecurity."
+
 # Navigation
 navigation:
   - text: About
