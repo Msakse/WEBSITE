@@ -1,0 +1,6 @@
+<!-- Navigation menu items -->
+<ul class="menu">
+    {% for item in site.navigation %}
+    <li class="menu-item menu-item-{{ item.slug }}{% if item.url == page.url %} current-menu-item{% endif %}"><a href="{{ item.url | absolute_url }}">{{ item.label }}</a></li>
+    {% endfor %}
+</ul>
