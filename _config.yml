@@ -53,6 +53,12 @@ navigation:
   - text: Contact Me
     url: /contact
 
+secondary_navigation:
+  - title: "About"
+    url: "/about"
+  - title: "Contact"
+    url: "/contact"
+
 # Directory settings
 source: .
 destination: ./_site
