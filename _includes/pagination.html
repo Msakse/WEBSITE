@@ -1,0 +1,18 @@
+<!-- Newer and older posts links -->
+<nav class="pagination inner">
+    <div class="nav-links">
+        {% if paginator.previous_page %}
+        <a class="newer-posts btn btn-secondary btn-icon" href="{{ paginator.previous_page_path }}">
+            {% include icons/arrow-left.html %}
+            <span class="screen-reader-text">Newer Posts</span>
+        </a>
+        {% endif %}
+        <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+        {% if paginator.next_page %}
+        <a class="older-posts btn btn-secondary btn-icon" href="{{ paginator.next_page_path }}">
+            <span class="screen-reader-text">Older Posts</span>
+            {% include icons/arrow-right.html %}
+        </a>
+        {% endif %}
+    </div>
+</nav>
