@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<main id="main" class="content outer">
+
+    {% assign tag = page.tag %}
+    <header class="archive-header inner">
+        <h1 class="archive-title">{{ tag }}</h1>
+        <p class="archive-description">
+            {% if paginator.total_posts == 0 %}
+                A collection of 0 posts
+            {% elsif paginator.total_posts == 1 %}
+                A collection of 1 post
+            {% else %}
+                A collection of {{ paginator.total_posts }} posts
+            {% endif %}
+        </p>
+    </header>
+
+    {% include loop-archive.html %}
+
+</main>
