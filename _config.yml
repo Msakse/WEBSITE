@@ -9,7 +9,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 production_url: "https://www.mitisaksena.com/"
 # disqus: 'nuclearkatie'
 # mailchimp_url: '//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117'
-# cover_image: "/path/to/cover_image.gif"
+cover_image: "assets/images/background.jpg"
 # Add your GA Tracking Id
 # ga_analytics: "UA-134095464-1"
 
