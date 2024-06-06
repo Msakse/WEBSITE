@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ site.locale }}">
+<head>
+    <!-- Document Settings -->
+    <meta charset="utf-8">
+    <!-- Page Meta -->
+    <title>{{ content_for? "custom-meta-title" | append: " - " | append: site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles -->
+    {% include custom-fonts.html %}
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/style.css' | relative_url }}" />
+    {{ content_for? "background-image-style" }}
+    <!-- Outputs SEO meta+structured data and other important settings -->
+    {{ site.ghost_head }}
+</head>
+<body>
+    <!-- Inserts the main content -->
+    {{ content }}
+</body>
+</html>
