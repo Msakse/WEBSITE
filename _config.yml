@@ -1,3 +1,107 @@
-title: Your Site Title
-description: A brief description of your site
-theme: your-theme-name
+# Site settings
+title: "Miti Saksena"
+description: "Miti is driven by two things in the world: evidence-based medical innovation and biosecurity"
+meta_description: "A brief description of Miti Saksena's website focusing on medical innovation and biosecurity."
+# Uncomment and provide the path if you have a logo and favicon
+# logo: "/path/to/logo.png"
+# favicon: "/path/to/favicon.ico"
+baseurl: "" # the subpath of your site, e.g. /blog
+production_url: "https://www.mitisaksena.com/"
+# disqus: 'nuclearkatie'
+# mailchimp_url: '//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117'
+# cover_image: "/path/to/cover_image.gif"
+# Add your GA Tracking Id
+# ga_analytics: "UA-134095464-1"
+
+# Author settings
+author:
+  name: "Miti Saksena"
+  # Uncomment and provide the path if you have an author image
+  # image: "/path/to/image.jpg"
+  description: "My name is Miti Saksena. I'm a physician, researcher, and biosecurity advocate. It’s nice to meet you."
+
+# Contact form settings
+email: "mitisaksena@gmail.com"
+contact_page_description: "Horace theme comes with a contact form built-in. You can use this form with Formspree service and get up to 50 submissions for free. Also, you can easily switch to another service if you want."
+thankyou_page_description: "Your message has been successfully sent. I'll get back to you as soon as possible!"
+
+# Social links
+# Uncomment and provide the URL if you have social profiles
+# twitter: "https://twitter.com/nuclearkatie"
+# facebook: "https://facebook.com/yourprofile"
+# github: "https://github.com/nuclearkatie"
+# codepen: "https://codepen.io/yourprofile"
+# dribbble: "https://dribbble.com/yourprofile"
+# medium: "https://medium.com/@nuclearkatie"
+# pinterest: "https://pinterest.com/yourprofile"
+# linkedin: "https://www.linkedin.com/in/nuclearkatie"
+# producthunt: "https://producthunt.com/@yourprofile"
+
+# Navigation
+navigation:
+  - text: About
+    url: /about
+  - text: Resume/CV
+    url: /cv
+  - text: Research
+    url: /research
+  # Uncomment if you have a style guide page
+  # - text: Style Guide
+  #   url: /style-guide/
+  - text: Uranium Glass
+    url: /uranium-glass
+  - text: Contact Me
+    url: /contact
+
+# Directory settings
+source: .
+destination: ./_site
+plugins_dir: _plugins
+layouts_dir: _layouts
+data_dir: _data
+includes_dir: _includes
+collections_dir: _collections
+
+# Include in build
+include:
+  - _pages
+
+# Required Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-tagsgenerator
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-assets
+
+# Pagination settings
+paginate: 5
+paginate_path: "/page/:num/"
+
+# Permalinks
+permalink: /:title/
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Sass settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Include in build
+include:
+  - _pages
