@@ -38,6 +38,7 @@ linkedin: "https://www.linkedin.com/in/mitisaksena/"
 # producthunt: "https://producthunt.com/@yourprofile"
 
 #hero section 
+enable_hero: true
 hero_background_image: "/path/to/your/background-image.jpg"
 hero_avatar: "/path/to/your/avatar.jpg"
 hero_avatar_alt_text: "Your Avatar Alt Text"
