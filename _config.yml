@@ -1,8 +1,7 @@
 # Site settings
-title: "Miti Saksena"
+name: "Miti Saksena"
 description: "Miti is driven by two things in the world: evidence-based medical innovation and biosecurity"
 meta_description: "A brief description of Miti Saksena's website focusing on medical innovation and biosecurity."
-# Uncomment and provide the path if you have a logo and favicon
 # logo: "/path/to/logo.png"
 # favicon: "/path/to/favicon.ico"
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -34,7 +33,7 @@ thankyou_page_description: "Your message has been successfully sent. I'll get ba
 # dribbble: "https://dribbble.com/yourprofile"
 # medium: "https://medium.com/@nuclearkatie"
 # pinterest: "https://pinterest.com/yourprofile"
-linkedin: "https://www.linkedin.com/in/mitisaksena/"
+linkedin: "mitisaksena"
 # producthunt: "https://producthunt.com/@yourprofile"
 
 #hero section 
@@ -60,33 +59,10 @@ navigation:
   # Uncomment if you have a style guide page
   # - text: Style Guide
   #   url: /style-guide/
-  - text: Uranium Glass
-    url: /uranium-glass
+  - text: Digital Garden
+    url: /digitalgarden
   - text: Contact Me
     url: /contact
-
-secondary_navigation:
-  - title: "About"
-    url: "/about"
-  - title: "Contact"
-    url: "/contact"
-
-# Directory settings
-source: .
-destination: ./_site
-plugins_dir: _plugins
-layouts_dir: _layouts
-data_dir: _data
-includes_dir: _includes
-collections_dir: _collections
-
-#sidebar
-enable_about_in_sidebar: true
-members_enabled: true
-
-# Include in build
-include:
-  - _pages
 
 # Required Plugins
 plugins:
@@ -106,24 +82,9 @@ permalink: /:title/
 
 # Markdown settings
 markdown: kramdown
-kramdown:
-  input: GFM
 
 # Sass settings
 sass:
   sass_dir: _sass
   style: compressed
 
-# Exclude from build
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-
-# Include in build
-include:
-  - _pages
