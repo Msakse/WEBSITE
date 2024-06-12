@@ -1,43 +1,20 @@
-<!-- The header of the theme -->
-<header class="navbar outer">
-    <div class="navbar-inside">
-        <div class="navbar-branding">
-            {% if site.logo %}
-            <p class="navbar-logo"><a href="{{ site.url }}"><img src="{{ site.logo }}" alt="{{ site.title }}" /></a></p>
-            {% endif %}
-            {% if page.url == "/" %}
-            <h1 class="navbar-title{% if site.logo %} screen-reader-text{% endif %}"><a href="{{ site.url }}">{{ site.title }}</a></h1>
+<header id="masthead" class="site-header outer">
+    <div class="site-header-inside">
+        <div class="site-branding">
+            {% if site.logo != null %}
+                <p class="site-logo"><a href="{{ site.baseurl }}/" rel="home"><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}" /></a></p>
+                <h1 class="site-title screen-reader-text"><a href="{{ site.baseurl }}" rel="home">{{site.title}}</a></h1>
             {% else %}
-            <p class="navbar-title{% if site.logo %} screen-reader-text{% endif %}"><a href="{{ site.url }}">{{ site.title }}</a></p>
+                <h1 class="site-title"><a href="{{ site.baseurl }}/" rel="home">{{site.name}}</a></h1>
             {% endif %}
-        </div>
-        <nav class="navbar-menu" aria-label="Primary Navigation">
-            {% include navigation.html %}
-            <ul class="actions">
-                <!-- If members enabled, show member related menu items -->
-                {% if site.members_enabled %}
-                    <!-- Not logged in: show subscribe and sign in links -->
-                    {% if site.member == false %}
-                    <li class="action-item action-subscribe">
-                        <a href="javascript:" data-portal="signup">Subscribe</a>
-                    </li>
-                    <li class="action-item">
-                        <a href="javascript:" data-portal="signin">Sign in</a>
-                    </li>
-                    <!-- Logged in: show account link -->
-                    {% else %}
-                    <li class="action-item action-button">
-                        <a class="btn btn-icon btn-outlined" href="javascript:" data-portal="account"><span class="screen-reader-text">Account</span>{% include icons/user.html %}</a>
-                    </li>
-                    {% endif %}
-                {% endif %}
-                <li class="action-item action-button">
-                    <button class="sidebar-toggle btn btn-icon"><span class="screen-reader-text">Menu</span>{% include icons/more.html %}</button>
-                </li>
-                <li class="action-item action-button">
-                    <button class="search-toggle btn btn-icon" data-ghost-search><span class="screen-reader-text">Search</span>{% include icons/search.html %}</button>
-                </li>
+        </div><!-- .site-branding -->
+        <nav id="main-navigation" class="site-navigation" aria-label="Primary Navigation">
+            <ul class="menu">
+            {% for link in site.navigation %}
+                <li class="menu-item"><a href="{{ link.url }}">{{ link.text }}</a></li>
+            {% endfor %}
             </ul>
-        </nav>
-    </div>
-</header>
+            <button id="sidebar-show" class="sidebar-toggle"><span class="screen-reader-text">Open Sidebar</span><span class="icon-more" aria-hidden="true"></span></button>
+        </nav><!-- .site-navigation -->
+    </div><!-- .site-header-inside -->
+</header><!-- .site-header -->
