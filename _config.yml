@@ -39,8 +39,8 @@ linkedin: "https://www.linkedin.com/in/mitisaksena/"
 
 #hero section 
 enable_hero: true
-hero_background_image: "/path/to/your/background-image.jpg"
-hero_avatar: "/path/to/your/avatar.jpg"
+hero_background_image: "assets/images/background.jpg"
+hero_avatar: "assets/images/IMG_6156 copy.jpg"
 hero_avatar_alt_text: "Your Avatar Alt Text"
 hero_title: "Welcome to My Site"
 hero_text: "This is a brief introduction or tagline for your site."
