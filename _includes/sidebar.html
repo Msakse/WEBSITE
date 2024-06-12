@@ -1,31 +1,17 @@
-<!-- The sidebar of the theme -->
-<aside class="sidebar">
-    <div class="sidebar-scrollable">
-        <div class="sidebar-inside">
-            <button id="sidebar-hide" class="sidebar-toggle btn btn-icon"><span class="screen-reader-text">Close Sidebar</span>{% include icons/close.html %}</button>
-            {% if site.navigation %}
-            <!-- Includes navigation for small screens -->
-            <nav id="sidebar-nav" class="widget widget-nav">
-                <h2 class="widget-title small-title">Explore Site</h2>
-                {% include navigation.html %}
-                <!-- If members enabled and not logged in, show subscribe link -->
-                {% if site.members_enabled %}
-                {% if site.member == false %}
-                <ul class="actions">
-                    <li class="action-item action-button"><a class="btn" href="javascript:" data-portal="signup">Subscribe</a></li>
-                </ul>
-                {% endif %}
-                {% endif %}
-            </nav>
-            {% endif %}
-            <!-- Includes the about widget if enabled in settings -->
-            {% if site.enable_about_in_sidebar %}
-            {% include widget-about.html %}
-            {% endif %}
-            <!-- Includes the recent posts widget -->
-            {% include widget-recent.html %}
-            <!-- Includes the tagcloud widget -->
-            {% include widget-tagcloud.html %}
-        </div>
-    </div>
-</aside>
+<aside id="sidebar" class="sidebar">
+	<div class="sidebar-scrollable">
+		<div class="sidebar-inside">
+			<button id="sidebar-hide" class="sidebar-toggle"><span class="screen-reader-text">Close Sidebar</span><span
+				    aria-hidden="true" class="icon-close"></span></button>
+			<nav id="sidebar-navigation" class="widget site-navigation">
+				<h2 class="widget-title">Explore Site</h2>
+				<ul class="menu">
+					{% for link in site.navigation %}
+						<li class="menu-item"><a href="{{ link.url }}">{{ link.text }}</a></li>
+					{% endfor %}
+				</ul>
+			</nav>
+			{% include widgets.html %}
+		</div><!-- .sidebar-inside -->
+	</div><!-- .sidebar-scrollable -->
+</aside><!-- .sidebar -->
