@@ -8,7 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 production_url: "https://www.mitisaksena.com/"
 # disqus: 'nuclearkatie'
 # mailchimp_url: '//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117'
-cover_image: "assets/images/background.jpg"
+cover_image: "assets/images/DALL·E 2024-06-21 17.49.23 - A minimalistic yet warm office designed to resemble a cozy hangout spot or a cafe with reduced capacity. The space features a few cozy couches and arm.webp"
 # Add your GA Tracking Id
 # ga_analytics: "UA-134095464-1"
 
