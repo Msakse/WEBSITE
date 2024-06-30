@@ -56,7 +56,7 @@ navigation:
   - text: About
     url: /about
   - text: Resume/CV
-    url: /cv
+    url: /CV
   - text: Research
     url: /research
   # Uncomment if you have a style guide page
