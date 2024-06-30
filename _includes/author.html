@@ -1,6 +1,10 @@
 {% if site.author %}
-   <p class="hero-avatar"><img src="assets/images/Miti copy.jpg" alt="Miti Saksena's " class="avatar" /></p>
-    <h2 class="hero-title">{{ site.author.greetings }}</h2>
-    <p class="hero-description">{{ site.author.description | newline_to_br }}</p>
+   <p class="hero-avatar"><img src="assets/images/Miti copy.jpg" alt="Miti Saksena" class="avatar" /></p>
+    {% if site.author.greetings %}
+        <h2 class="hero-title">{{ site.author.greetings }}</h2>
+    {% endif %}
+    <div class="hero-description">
+        {{ site.author.description | newline_to_br }}
+    </div>
 {% endif %}
 {% include social-links.html %}
