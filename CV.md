@@ -1,4 +1,8 @@
-# Resume & CV
+
+---
+layout: page
+title: Resume and CV
+---
 
 <div class="button-container">
   <a href="/CV_Miti_gen.pdf" class="button">
