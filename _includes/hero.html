@@ -20,7 +20,9 @@
                 <h2 class="hero-title h1">{{ site.hero_title }}</h2>
             {% endif %}
             {% if site.hero_text %}
-                <p class="hero-text">{{ site.hero_text }}</p>
+                <div class="hero-text">
+                    {{ site.hero_text | newline_to_br }}
+                </div>
             {% endif %}
             <!-- Includes the social links list -->
             <div class="hero-social">
