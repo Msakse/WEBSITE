@@ -15,9 +15,11 @@ cover_image: "assets/images/DALL·E 2024-06-21 17.49.23 - A minimalistic yet war
 # Author settings
 author:
   name: "Miti Saksena"
-  # Uncomment and provide the path if you have an author image
   image: "assets/images/Miti.jpg"
-  description: "Welcome to my corner of the internet! Imagine a world where science meets whimsy, and you'll find me somewhere in the middle. It's nice to meet you"
+  description: 
+    - "Welcome to my corner of the internet!"
+    - "Imagine a world where science meets whimsy, and you'll find me somewhere in the middle."
+    - "It's nice to meet you"
 
 # Contact form settings
 email: "mitisaksena@gmail.com"
