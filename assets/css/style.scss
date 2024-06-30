@@ -486,12 +486,13 @@
 
 .hero-description br {
     display: block;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.8em; /* Increased space between lines */
+    content: "";
 }
 
-.hero-description span.highlight {
-    font-weight: bold;
-    color: #6b5b95; /* Adjust this color to match your design */
+.hero-description .highlight {
+    color: #6b5b95; /* Or any color that complements your design */
+    font-weight: 600;
 }
 
 .hero-text {
@@ -510,6 +511,7 @@
   height: 36px;
   line-height: 36px;
   margin: 0 3px 0.5em;
+  margin-top: 1.5em; /* Add space above social links */
   width: 36px;
 }
 
