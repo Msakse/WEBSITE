@@ -59,8 +59,8 @@ navigation:
   # Uncomment if you have a style guide page
   # - text: Style Guide
   #   url: /style-guide/
-  - text: Digital Garden
-    url: /digitalgarden
+  - text: Mind Palace
+    url: /mindpalace
   - text: Contact Me
     url: /contact
 
