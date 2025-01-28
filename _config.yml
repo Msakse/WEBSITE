@@ -1,4 +1,7 @@
+
 # Site settings
+repository: Msakse/WEBSITE
+github: [metadata]
 name: "Miti Saksena"
 title: "Miti Saksena"
 url: "https://www.mitisaksena.com"
@@ -92,3 +95,5 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
+
+
