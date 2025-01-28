@@ -59,18 +59,18 @@ about_text: "This is a brief description about me and my blog. I am passionate a
 # Navigation
 navigation:
   - text: About
-    url: /about
+    url: pages/about
   - text: Resume/CV
-    url: /CV
+    url: pages/CV.md
   - text: Research
     url: /research
   # Uncomment if you have a style guide page
   # - text: Style Guide
   #   url: /style-guide/
   - text: Mind Palace
-    url: /mind-palace
+    url: pages/mind-palace
   - text: Contact Me
-    url: /contact
+    url: pages/contact
 
 # Required Plugins
 plugins:
