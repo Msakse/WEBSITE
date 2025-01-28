@@ -1,15 +1,19 @@
 source "https://rubygems.org"
 
-# This will help ensure the proper Jekyll version is running.
-gem "jekyll", "~> 4.0"
-gem "kramdown", ">= 2.3.1"
+# Use github-pages gem to match GitHub Pages environment
+gem "github-pages", group: :jekyll_plugins
+gem "jekyll", "~> 3.9.3"
 
-gem "jekyll-paginate"
-gem "jekyll-seo-tag"
-gem "jekyll-sitemap"
-gem "jekyll-feed"
-gem "jekyll-assets"
-gem "jekyll-tagsgenerator"
+# Add webrick for Ruby 3.0+
+gem "webrick", "~> 1.8"
 
-gem "listen"
-gem "sass"
+# Jekyll plugins
+group :jekyll_plugins do
+  gem "jekyll-paginate"
+  gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
+  gem "jekyll-feed"
+  # Note: jekyll-assets isn't supported by GitHub Pages
+  # gem "jekyll-assets"
+  gem "kramdown-parser-gfm"
+end
