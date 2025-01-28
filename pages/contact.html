@@ -72,14 +72,19 @@
     <div class="container">
         <h1>Contact Me</h1>
         <p>I'd love to hear from you! Feel free to reach out using the form below or connect with me on social media.</p>
-        <form action="submit_form.php" method="post">
+        
+        <form action="https://formspree.io/f/myzkeqvb" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="email" name="_replyto" placeholder="Your Email" required>
             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <!-- Optional: Anti-spam honeypot field -->
+            <input type="text" name="_gotcha" style="display:none">
             <input type="submit" value="Send Message">
         </form>
+
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            <!-- Update with your actual LinkedIn profile URL -->
+            <a href="https://www.linkedin.com/in/mitisaksena/" target="_blank">LinkedIn</a>
         </div>
     </div>
 </body>
