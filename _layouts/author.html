@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<main id="main" class="content outer">
+
+    {% assign author = site.data.authors[page.author] %}
+    <header class="archive-header inner">
+        <h1 class="archive-title">{{ author.name }}</h1>
+        <p class="archive-description">{{ author.bio }}</p>
+    </header>
+
+    {% include loop-archive.html %}
+
+</main>

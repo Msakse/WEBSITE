@@ -1,0 +1,94 @@
+# Site settings
+name: "Miti Saksena"
+title: "Miti Saksena"
+url: "https://www.mitisaksena.com"
+description: "Miti is driven by two things in the world: evidence-based medical innovation and biosecurity"
+meta_description: "A brief description of Miti Saksena's website focusing on medical innovation and biosecurity."
+# logo: "/path/to/logo.png"
+# favicon: "/path/to/favicon.ico"
+baseurl: "" # the subpath of your site, e.g. /blog
+production_url: "https://www.mitisaksena.com/"
+# disqus: 'nuclearkatie'
+# mailchimp_url: '//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117'
+cover_image: "assets/images/DALL·E 2024-06-21 17.49.23 - A minimalistic yet warm office designed to resemble a cozy hangout spot or a cafe with reduced capacity. The space features a few cozy couches and arm.webp"
+# Add your GA Tracking Id
+# ga_analytics: "UA-134095464-1"
+
+# Author settings
+author:
+  name: "Miti Saksena"
+  image: "assets/images/Miti.jpg"
+  description: |
+    Welcome to my corner of the internet!
+    Imagine a world where science meets whimsy,
+    and you'll find me somewhere in the middle.
+    It's nice to meet you
+
+# Contact form settings
+email: "mitisaksena@gmail.com"
+contact_page_description: "Horace theme comes with a contact form built-in. You can use this form with Formspree service and get up to 50 submissions for free. Also, you can easily switch to another service if you want."
+thankyou_page_description: "Your message has been successfully sent. I'll get back to you as soon as possible!"
+
+# Social links
+# Uncomment and provide the URL if you have social profiles
+# twitter: "https://twitter.com/nuclearkatie"
+# facebook: "https://facebook.com/yourprofile"
+# github: "https://github.com/nuclearkatie"
+# codepen: "https://codepen.io/yourprofile"
+# dribbble: "https://dribbble.com/yourprofile"
+# medium: "https://medium.com/@nuclearkatie"
+# pinterest: "https://pinterest.com/yourprofile"
+linkedin: "mitisaksena"
+# producthunt: "https://producthunt.com/@yourprofile"
+
+#hero section 
+enable_hero: true
+hero_background_image: "assets/images/background.jpg"
+hero_avatar: "assets/images/IMG_6156 copy.jpg"
+hero_avatar_alt_text: "Your Avatar Alt Text"
+hero_title: "Welcome to My Site"
+hero_text: ""
+
+#about section
+about_title: "About Me"
+about_text: "This is a brief description about me and my blog. I am passionate about evidence-based medical innovation and biosecurity."
+
+# Navigation
+navigation:
+  - text: About
+    url: /about
+  - text: Resume/CV
+    url: /CV
+  - text: Research
+    url: /research
+  # Uncomment if you have a style guide page
+  # - text: Style Guide
+  #   url: /style-guide/
+  - text: Mind Palace
+    url: /mind-palace
+  - text: Contact Me
+    url: /contact
+
+# Required Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-tagsgenerator
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-assets
+
+# Pagination settings
+paginate: 5
+paginate_path: "/page/:num/"
+
+# Permalinks
+permalink: /:title/
+
+# Markdown settings
+markdown: kramdown
+
+# Sass settings
+sass:
+  sass_dir: _sass
+  style: compressed

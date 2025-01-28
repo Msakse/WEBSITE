@@ -89,6 +89,6 @@ All notable changes to this project will be documented in this file.
 
 - Code blocks styling
 
-## v1.0.0 - 7 February 2018
+## v.0.5 - 6 June 2024
 
-Initial release
+(proto) Initial release

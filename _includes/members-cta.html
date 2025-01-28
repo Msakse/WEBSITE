@@ -1,0 +1,31 @@
+#file is used to create a call-to-action (CTA) for members, encouraging them to subscribe or upgrade their subscription. It includes conditional logic to display different messages based on the visibility of the post and whether the user is a member.
+
+{{ content | markdownify }}
+<aside class="signup-box">
+    {% if page.visibility == "paid" %}
+        <h2 class="signup-box-title">This post is for paying subscribers only</h2>
+        {% if site.member %}
+        <p>Upgrade your account to keep reading this post and get access to the full library of posts for paying subscribers only.</p>
+        {% else %}
+        <p>Subscribe to get access to the full library of posts for paying subscribers only.</p>
+        {% endif %}
+    {% endif %}
+    {% if page.visibility == "members" %}
+        <h2 class="signup-box-title">This post is for subscribers only</h2>
+        <p>Subscribe to get access to the full library of posts for subscribers only.</p>
+    {% endif %}
+    {% if page.visibility == "tiers" %}
+        <h2 class="signup-box-title">
+            {% if site.tiers.size == 0 %}
+                This post is for subscribers only
+            {% elsif site.tiers.size == 1 %}
+                This post is for subscribers on the tier {{ site.tiers.first }}
+            {% else %}
+                This post is for subscribers on the tiers {{ site.tiers | array_to_sentence_string: 'and' }}
+            {% endif %}
+        </h2>
+        {% if site.member %}
+        <p>Upgrade your account to keep reading this post.</p>
+        {% else %}
+        <p>Subscribe to g
+

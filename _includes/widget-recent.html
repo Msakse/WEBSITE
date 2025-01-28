@@ -1,0 +1,19 @@
+<!-- Displays the recent posts list -->
+<section class="widget widget-recent-posts">
+    <h2 class="widget-title small-title">Recent Articles</h2>
+    <ul>
+        {% for post in site.posts limit:3 %}
+        <li>
+            <div class="post-header">
+                <div class="post-meta">
+                    <time class="published" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%B %d, %Y' }}</time>
+                </div>
+                <h3 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            </div>
+            {% if post.feature_image %}
+            <a href="{{ post.url | relative_url }}" class="post-thumbnail"><img class="post-thumbnail-image" src="{{ post.feature_image }}" alt="{{ post.title }}" /></a>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</section>

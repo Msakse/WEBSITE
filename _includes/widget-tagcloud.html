@@ -1,0 +1,10 @@
+<!-- Displays a tag cloud -->
+<section class="widget widget-tagcloud">
+    <h2 class="widget-title small-title">Tags</h2>
+    <div class="tagcloud">
+        {% assign tags = site.tags | sort: "size" | reverse %}
+        {% for tag in tags %}
+            <a href="{{ site.baseurl }}/tag/{{ tag[0] }}" class="tag">{{ tag[0] }} ({{ tag[1].size }})</a>
+        {% endfor %}
+    </div>
+</section>
